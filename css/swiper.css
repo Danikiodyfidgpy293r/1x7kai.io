@@ -1,0 +1,106 @@
+/* Основной контейнер */
+.swiper__place {
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+/* Контейнер Swiper */
+.swiper {
+  width: 100%;
+  max-width: 700px;
+    max-height: 100%;
+    height: auto;
+  overflow: hidden; /* Исключает смещение слайдов */
+}
+
+/* Ссылка внутри слайда */
+.swiper__a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Слайд */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* Защита от переполнения */
+}
+
+/* Изображение внутри слайда */
+.swiper__image {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Описание внутри слайда */
+.swiper__description {
+  margin: 10px auto;
+  font-size: 16px;
+  text-align: center;
+  word-break: break-word; /* Исправлено с white-space */
+  overflow-wrap: break-word;
+  max-width: 100%;
+  width: 80%;
+}
+
+/* Обёртка слайдов */
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Плавное перелистывание */
+}
+
+/* Медиа-запрос для адаптации на мобильных устройствах */
+@media screen and (max-width: 1200px) {
+  .swiper__place {
+    padding: 2px 5px;
+  }
+
+  .swiper {
+    max-width: 100%;
+    width: 90%;
+    max-height: 100%;
+    height: auto;
+  }
+
+  .swiper__image {
+    width: 250px;
+    height: auto;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .swiper__description {
+    max-width: 100%;
+    min-width: 30%;
+    width: 90%;
+  }
+
+  /* Настройки навигационных кнопок */
+  .swiper-button-next, .swiper-button-prev {
+    position: absolute; /* Вернул absolute, так корректнее */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+}
+

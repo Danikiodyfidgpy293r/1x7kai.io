@@ -1,0 +1,64 @@
+ .service {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+          margin: 15px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          backdrop-filter: blur(5px);
+          user-select: none;
+        }
+
+        .service:hover {
+         transition: all .4s ease-in-out;
+         transform: scale(1.05);
+         box-shadow: 5px 5px 0 0 gray;
+        }
+
+        .service button {
+         background: none;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         padding: 5px 10px;
+         cursor: pointer;
+        }
+
+        .service button:hover {
+         transition: all .5s ease;
+         background: #ccc;
+        }
+
+        #summary {
+          user-select: none;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          padding: 10px;
+          margin: 15px;
+        }
+
+       #summary ul {
+         list-style-type: none;
+       }
+       
+       #summary li {
+         margin-top: 5px;
+         margin-bottom: 5px;
+       }
+
+       #summary li:nth-child(even) {
+        color: gray;
+       }
+
+       #buyButton {
+        text-decoration: none;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: black;
+       }
+
+       #buyButton:hover {
+        transition: all .5s ease;
+        background: #ccc;
+       }

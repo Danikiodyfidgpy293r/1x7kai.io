@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy">
+    <meta name="X-XSS-Protection" content="1; mode=block">
+    <meta name="X-Content-Type-Options" content="nosniff">
+      <title>My site</title>
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="icon" href="#">
+  </head>
+  <body>
+   <main>
+    <header>
+       <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="register.php">Registration</a></li>
+       </ul>
+    </header>
+      <nav><h2>Home</h2></nav>
+
+      <div class="container">
+         <h2 class="h2-container">Тут будет информация о самом сайте</h2>
+         <p>Данный сайт существует под моим руководстовом, так как я и явлюсь его владельцем.</p>
+         <p>Тут я лишь расскажу кратко, что зачем и почему этот сайт существует.</p>
+         <p>Если вы хотите узнать <a class="text-container" href="about.html">подробности</a>, то переходите во вкладку "О нас".</p>
+         <p>Если вы хотите заказать <a class="text-container" href="services.html">услугу</a> у меня, то перейдите во вкладку "Сервис".</p>
+         <i>Чтобы чётко, кратко и понятно разъяснить для чего этот сайт: я просто повторяю знания и свои умения использовать HTML-разметку по памяти.</i>
+      </div>
+      <div class="commentr">
+        <h2>Оставить комментарий: </h2>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Введите своё имя.." required>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Введите своё email.." required>
+        <label for="text">Text: </label>
+        <textarea rows="4" cols="26" id="text" name="text" placeholder="Оставить свой комментарий.." required></textarea>
+        <button class="comment-btn" onClick="register()">Отправить</button>
+      </div>
+     <script type="text/javascript">
+       function register() {
+          if (confirm('Вы ещё не зарегистрированный пользователь.')) {
+             window.location.href = 'register.php';
+          }
+       }
+     </script>
+    <footer class="footer_site">
+       <p class="footer__p">&copy;2025 1x7Kai. All right reserved.</p>
+    </footer>
+   </main>
+  </body>
+</html>
