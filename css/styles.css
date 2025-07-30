@@ -219,9 +219,6 @@ input {
   }
 
 .footer_site {
- padding: 10px 20px;
- background: #ccc;
- max-width: 100%;
- width: auto;
+ width: 100%;
  }
 }
