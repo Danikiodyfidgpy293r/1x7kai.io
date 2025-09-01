@@ -75,7 +75,7 @@
               </tr>
               <tr>
                 <td></td>
-                <td>Стройсервис</td>
+                <td><a class="a__link" href="https://danikiodyfidgpy293r.github.io/stroyservice_home/">Стройсервис</a></td>
               </tr>
             </tbody>
          </table>
@@ -149,4 +149,5 @@ This game was worked on by: 1x7Kai — developer; Alex_556 — designer</p>
    </main>
         <script src="js/swiper.js"></script>
   </body>
+
 </html>
