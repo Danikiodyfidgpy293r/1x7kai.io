@@ -79,6 +79,16 @@ header li:hover {
  text-decoration: none;
 }
 
+.a__link {
+ color: black;
+}
+
+.a__link:hover {
+ transition: all .4s ease-in-out;
+ color: blue;
+ text-decoration: none;
+}
+
 nav {
   text-align: center;
 }
@@ -222,3 +232,4 @@ input {
  width: 100%;
  }
 }
+
